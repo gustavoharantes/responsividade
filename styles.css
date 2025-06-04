@@ -1,0 +1,51 @@
+html{
+    font-family: "Manrope", sans-serif; /**/
+    width: 100%; /*garante que a fonte ocupe 100%*/
+    height: 100%;/*garante que a fonte ocupe 100%*/
+    box-sizing: border-box;/*não deixa estrapolar o tamanho da borda*/
+}
+body{
+    margin: 0;/*tira a margem do body*/
+}
+button{
+    background-color: #F84646;
+    color: #fff;
+    font-weight: 500;
+    font-size: 24px;
+    padding: 8px 24px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+h1{
+    font-size: 64px;
+    font-weight: 800;
+    margin: 0;
+}
+h2{
+    font-weight: 800;
+    font-size: 48px;
+    margin: 0;
+}
+#presentation-container{
+    padding: 40px 120px; /*bordas do texto dentro do container*/
+    height: 600px;/*tamanho da seção*/
+}
+#presentation{
+    width: 600px;
+    position: relative;
+    top: calc(50% - 146px);/*inspeciona e confere o tamanho e calcula a metade*/
+}
+.container{
+    padding: 160px 120px;
+    text-align: center;
+}
+.contact-title{
+    margin-top: 8px;
+}
+.container > p {
+    margin-top: 24px;
+}
+.container > button {
+    margin-top: 32px;
+}
