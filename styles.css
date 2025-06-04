@@ -1,3 +1,18 @@
+/*UNIDADES DE MEDIDAS
+html {
+    font-size: 16px (geralmente vem nesse padrão)
+    1rem = 16px
+    2rem = 32px
+    3rem = 48px
+    
+    em
+    suponhamos que tem uma div conforme abaixo
+    <div style="font-size: 5px">
+            <p>asdasdadas</p>
+            </div>
+    o font-size foi definido com uma tag dentro da div, isso define o tamanho do em
+    1em = 5px
+    2em = 10px*/
 html{
     font-family: "Manrope", sans-serif; /**/
     width: 100%; /*garante que a fonte ocupe 100%*/
