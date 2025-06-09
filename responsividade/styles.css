@@ -1,0 +1,111 @@
+html{
+    font-family: "Manrope", sans-serif; /**/
+    width: 100%; /*garante que a fonte ocupe 100%*/
+    height: 100%;/*garante que a fonte ocupe 100%*/
+    box-sizing: border-box;/*não deixa estrapolar o tamanho da borda*/
+    font-size: 16px; /*fonte definida na raiz*/
+    /*UNIDADES DE MEDIDAS
+html {
+    font-size: 16px (geralmente vem nesse padrão)
+    1rem = 16px
+    2rem = 32px
+    3rem = 48px
+    
+    em
+    suponhamos que tem uma div conforme abaixo
+    <div style="font-size: 5px">
+            <p>asdasdadas</p>
+            </div>
+    o font-size foi definido com uma tag dentro da div, isso define o tamanho do em
+    1em = 5px
+    2em = 10px
+    
+    % pega o tamanho relacionado ao filho dele, ao contexto dele no caso a div
+    
+    vw
+    tela width 1000px;
+    1vw = 10px (1%)
+    10vw = 100px (10%)
+    100vw = 1000px (100%)
+
+    vh
+    tela height 600px;
+    1vh = 6px (1%)
+    10vh = 60px (10%)
+    100vh = 600px (100%)
+
+    Em resumo:
+    Usa o rem, vh e vw para definir o tamanho das fontes, travando uma unidade de medida na raiz do código
+    */
+}
+body{
+    margin: 0;/*tira a margem do body*/
+}
+button{
+    background-color: #F84646;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: .5rem 1.5rem;
+    border-radius: .5rem;
+    border: none;
+    cursor: pointer;
+}
+h1{
+    font-size: 4rem; /*é relacionado ao tamanho da fonte definida na raiz*/
+    font-weight: 800;
+    margin: 0;
+}
+h2{
+    font-weight: 800;
+    font-size: 3rem;
+    margin: 0;
+}
+#presentation-container{
+    padding: 2.5rem 7.5rem; /*bordas do texto dentro do container*/
+    height: 100vh;/*tamanho da seção*/
+    /*há vários tipos de bakcgrounds que tratam os fundos */
+    background-image: url(assets/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#presentation{
+    width: 37.5rem;
+    position: relative;
+    top: calc(50% - 9rem);/*inspeciona e confere o tamanho e calcula a metade*/
+}
+.container{
+    padding: 10rem 7.5rem;
+    text-align: center;
+}
+.contact-title{
+    margin-top: .5rem;
+}
+.container > p {
+    margin-top: 1.5rem;
+}
+.container > button {
+    margin-top: 2rem;
+    transition: opacity 0.5s ease-in-out, transform 0.5s .2s;
+}
+.container > button:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+.background-gradient{
+    /*linear gradient, primeiro define o grau do degrade, depois a cor que inicia e por últiimo a cor que termina*/
+    background: linear-gradient(180deg, #fff, #d9d9d9);
+}
+/*
+Animações básicas
+Há vários tipos de transições
+transition-property: Define qual propriedade será animada
+transition-duration: Especifica a duração da transição
+transition-timing-function: Determina como a transição progride ao longo do tempo
+transition-delay: Define um atraso antes do início da transição
+
+porém há uma sitaxe simplificada
+transition: [property] [duration] [timing-function] [delay];
+Exemplo:
+transition: opacity 0.5s ease-in-out;
+*/
