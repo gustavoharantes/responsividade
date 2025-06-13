@@ -1,3 +1,36 @@
 .teste{
     width: 100vw;
 }
+/*UNIDADES DE MEDIDAS
+html {
+    font-size: 16px (geralmente vem nesse padrão)
+    1rem = 16px
+    2rem = 32px
+    3rem = 48px
+    
+    em
+    suponhamos que tem uma div conforme abaixo
+    <div style="font-size: 5px">
+            <p>asdasdadas</p>
+            </div>
+    o font-size foi definido com uma tag dentro da div, isso define o tamanho do em
+    1em = 5px
+    2em = 10px
+    
+    % pega o tamanho relacionado ao filho dele, ao contexto dele no caso a div
+    
+    vw
+    tela width 1000px;
+    1vw = 10px (1%)
+    10vw = 100px (10%)
+    100vw = 1000px (100%)
+
+    vh
+    tela height 600px;
+    1vh = 6px (1%)
+    10vh = 60px (10%)
+    100vh = 600px (100%)
+
+    Em resumo:
+    Usa o rem, vh e vw para definir o tamanho das fontes, travando uma unidade de medida na raiz do código
+    */
